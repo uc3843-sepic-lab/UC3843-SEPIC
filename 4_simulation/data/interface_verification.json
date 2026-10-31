@@ -1,0 +1,13 @@
+{
+  "scope": "Ideal circuit/constitutive verification, not physical prototype validation",
+  "setpoint_intercept_V": 15.296875,
+  "setpoint_slope_V_per_command": -4.021875,
+  "fixed_output_filter_tau_s": 0.007497446373850868,
+  "feedback_clamped_filter_tau_s": 0.006875,
+  "feedback_KCL_residual_A": 0.0,
+  "series_bus_sensitivity_analytic": -3.7866335014354475,
+  "series_bus_sensitivity_numerical": -3.786633499203162,
+  "parallel_bus_sensitivity_analytic": 0.8117631989801928,
+  "parallel_bus_sensitivity_numerical": 0.8117631988824313,
+  "parallel_check_branch_model": "Ic(V,u) = 0.3 + 0.4*u - 0.005*V A, illustrative only"
+}

@@ -1,0 +1,29 @@
+reference,part_or_value,function,source
+PV1-PV2,20 W "12 V" PV module (Voc about 21 V),PV source (two modules),Manuscript Sect. 2.7
+U1,UC3843 current-mode PWM controller,Inner current-mode loop of the SEPIC,Manuscript Sect. 2.6; Fig. 6
+Q1,IRF540N MOSFET,SEPIC switch,Manuscript Sect. 2.6; Fig. 6
+D1,MBR10100CT Schottky diode (Fig. 6 label: MBRF10100CT),SEPIC output diode,Manuscript Sect. 2.6; Fig. 6
+L1,68 uH,SEPIC input inductor,Manuscript Sect. 2.6; Fig. 6
+L2,68 uH,SEPIC output inductor,Manuscript Sect. 2.6; Fig. 6
+Cc,10 uF,SEPIC coupling capacitor,Manuscript Sect. 2.6; Fig. 6
+Cin,470 uF,Input capacitor,Manuscript Sect. 2.6; Fig. 6
+Cout,1000 uF,Output capacitor,Manuscript Sect. 2.6; Fig. 6
+R_sense,0.1 ohm,UC3843 current sense,Fig. 6
+R_fb1,39 kohm,Feedback divider (upper),Fig. 6
+R_fb2,10.0 kohm,Feedback divider (lower),Fig. 6
+R_nudge,22 kohm,Bias summing resistor into the feedback node,Manuscript Sect. 2.5; Fig. 6
+R_filter,10 kohm,RC low-pass of the STM32 PWM bias,Manuscript Sect. 2.5; Fig. 6
+C_filter,1.0 uF,RC low-pass of the STM32 PWM bias (tau = 10 ms),Manuscript Sect. 2.5; Fig. 6
+RT,10 kohm,UC3843 timing resistor,Fig. 6
+CT,1 nF,UC3843 timing capacitor (check: see README),Fig. 6
+R_comp,4.7 kohm,Error-amplifier compensation,Fig. 6
+C_comp,10 nF,Error-amplifier compensation,Fig. 6
+R_vcc,2.7 kohm 3 W,UC3843 supply dropper,Fig. 6
+D2,1N4744A 15 V Zener,UC3843 supply clamp,Fig. 6
+MCU,STM32 Nucleo-F411RE,Supervisory controller (PA8 = TIM1_CH1 PWM bias; PB8/PB9 = I2C),Manuscript Sect. 2.3; Fig. 7
+SENSE,INA238 16-bit power monitor,Bus voltage/current/power measurement,Manuscript Sect. 2.4
+R_shunt,0.01 ohm >= 1 W,High-side current shunt,Manuscript Sect. 2.4; Fig. 7
+TVS,SMBJ43A,Transient-voltage suppression (43 V standoff),Manuscript Sect. 2.7
+F1-F2,2 A fuse,Per-module protection,Manuscript Sect. 2.7
+F3,5 A fuse,Main bus protection,Manuscript Sect. 2.7
+RL,2 x 100 ohm 50 W in parallel (50 ohm),Resistive load,Manuscript Sect. 2.7

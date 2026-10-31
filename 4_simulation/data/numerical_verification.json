@@ -1,0 +1,18 @@
+{
+  "nominal_runs": 576,
+  "trace_rows": 345600,
+  "samples_per_run_all_600": true,
+  "energy_recalculated_from_export": true,
+  "energy_max_relative_difference": 6.658606834928534e-09,
+  "energy_capture_recalculated_from_export": true,
+  "capture_max_abs_difference_pp": 1.4902826990237372e-06,
+  "command_bounds_verified": true,
+  "max_command_step_per_decision": 0.025000000000000022,
+  "slew_limit_verified": true,
+  "profile_states_checked": 10,
+  "max_relative_oracle_change_on_refinement": 1.688301983517202e-06,
+  "STC_module_model_Pmp_W": 20.0,
+  "module_record_STC_W": 20.0,
+  "trace_csv_uncompressed_sha256": "4039697da9169d8e1111b4565eedd63abb2c3ffcdd90ca3aaa3cde1a15ac878a",
+  "fingerprint_note": "SHA-256 of the uncompressed CSV bytes; the .gz container itself may differ between zlib versions."
+}
