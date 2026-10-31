@@ -1,6 +1,6 @@
 # UC3843-SEPIC
 
-Data, firmware, hardware files and simulation code for a low-cost photovoltaic (PV) prototype in
+Hardware files, measured results and simulation code for a low-cost photovoltaic (PV) prototype in
 which an STM32 microcontroller supervises a UC3843 current-mode SEPIC converter. The
 microcontroller injects a bounded, RC-filtered PWM bias into the converter's feedback node; the
 analog UC3843 loop keeps control of the switching. Two nominal 20 W panels and a 50 ohm load were
