@@ -1,0 +1,12 @@
+metric,unit,passive_series_A,controlled_series_1,passive_parallel_B,controlled_parallel_2
+Pre-window mean power (0-15 s),W,20.38,21.48,6.47,6.82
+Middle-window mean power (15-40 s),W,19.7,8.29,6.22,2.62
+Recovery-window mean power (40-60 s),W,19.85,20.94,6.29,6.63
+Bus energy (60 s),J,1194.66,948.06,378.24,300.43
+Shade-onset settling,s,,<0.05,,<0.05
+Recovery settling,s,,3.619,,<0.05
+Mean absolute command increment,percentage points/sample,0,0.472,0,0.472
+Occupancy at command bounds,%,0,21.06,0,21.06
+Regulation persistence,%,,73.07,,74.01
+Middle-window power standard deviation,W,1.59,0.68,0.49,0.21
+PWM command excursion,percentage points,0,88,0,88

@@ -9,7 +9,7 @@ to the licence, and indicate if changes were made.
 
 Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
 
-Third-party data: the PV module record in 4_simulation/data/module_parameters.json
+Third-party data: the PV module record in 3_simulation/data/module_parameters.json
 (Canadian Solar CS5C-80M, before and after current scaling to 20 W) is taken from the
 CEC/SAM module database distributed with pvlib python 0.16.1 under the BSD-3-Clause
 licence. The record remains subject to that licence. No measured weather data are

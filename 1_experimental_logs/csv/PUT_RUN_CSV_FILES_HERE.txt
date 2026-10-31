@@ -1,1 +1,0 @@
-Put the raw run CSV files here (see ../README.md). This placeholder can be deleted.

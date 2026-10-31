@@ -14,10 +14,9 @@ These files support a research article submitted to *Energy Informatics*.
 
 | Folder | Contents |
 |---|---|
-| `1_experimental_logs/` | Raw 20 Hz testbed logs (one CSV per 60 s run), reference I-V/P-V sweeps, and `compute_table4_metrics.py`, which recomputes Table 4 of the article from the logs |
-| `2_firmware/` | STM32CubeIDE project of the supervisory firmware (Section 3.2 of the article) |
-| `3_hardware/` | SEPIC/UC3843 schematic with the bias-injection network (Fig. 1), wiring of the four test arrangements (Fig. 2), bill of materials |
-| `4_simulation/` | Simulation package of the learning extension (same as Additional file 1 of the article): module record and export script, reproduction script, all simulated traces and results, verification scripts; see `4_simulation/README.md` |
+| `1_hardware/` | SEPIC/UC3843 schematic with the bias-injection network (Fig. 1 of the article), wiring of the four test arrangements (Fig. 2), bill of materials |
+| `2_measurements/` | Window means of the hardware tests (Table 4) and the plots of the measured bus power and PWM command (Figs. 6-8) |
+| `3_simulation/` | Simulation package of the learning extension (same as Additional file 1 of the article): module record and export script, reproduction script, all simulated traces and results, verification scripts; see `3_simulation/README.md` |
 
 ## Experimental protocol (summary)
 
@@ -30,14 +29,14 @@ Bus-side power is an operating-point quantity, not a converter-efficiency measur
 
 ## Reproducing the article's numbers
 
-* Table 4 (measured metrics): `python 1_experimental_logs/compute_table4_metrics.py`
-* Tables 7-8 and Figs. 5 and 9-12 (simulation): see `4_simulation/README.md` (about 1 min)
+* Fig. 9 (measured window means of Table 4): `python 3_simulation/data/plot_hardware_summary.py`
+* Tables 7-8 and Figs. 5 and 10-12 (simulation): see `3_simulation/README.md` (about 1 min)
 
 ## Licences
 
-* Code (`compute_table4_metrics.py`, `2_firmware/`, `4_simulation/data/*.py`): MIT licence, see `LICENSE`.
+* Code (`3_simulation/data/*.py`): MIT licence, see `LICENSE`.
 * Data, documentation, schematic and figures: Creative Commons Attribution 4.0 International (CC BY 4.0), see `LICENSE-DATA.txt`.
-* The module record in `4_simulation/data/module_parameters.json` is derived from the CEC/SAM
+* The module record in `3_simulation/data/module_parameters.json` is derived from the CEC/SAM
   database distributed with pvlib python (BSD-3-Clause).
 
 ## Funding
